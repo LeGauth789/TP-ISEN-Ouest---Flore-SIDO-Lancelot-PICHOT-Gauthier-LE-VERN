@@ -8,15 +8,59 @@ html {
   font-family: Open Sans,sans-serif;
 }
 
-.container{max-width:1100px;margin:28px auto;padding:0 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(11,38,69,0.08);overflow:hidden;transition:transform .18s ease, box-shadow .18s ease}
-.card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(11,38,69,0.12)}
-.card img{display:block;width:100%;height:200px;object-fit:cover}
-.card-content{padding:16px}
-.card-content h3{margin:0 0 8px;font-size:1.05rem}
-.card-content p{margin:0 0 12px;color:var(--muted);font-size:0.95rem}
-.btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+.container{
+  max-width:1100px;
+  margin:28px auto;
+  padding:0 20px
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px
+}
+
+.card{
+  background:var(--card);
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(11,38,69,0.08);
+  overflow:hidden;
+  transition:transform .18s ease, box-shadow .18s ease
+}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 30px rgba(11,38,69,0.12)
+}
+
+.card img{
+  display:block;
+  width:100%;
+  height:200px;
+  object-fit:cover
+}
+.card-content{
+  padding:16px
+}
+.card-content h3{
+  margin:0 0 8px;
+  font-size:1.05rem
+}
+
+.card-content p{
+  margin:0 0 12px;
+  color:var(--muted);
+  font-size:0.95rem
+}
+
+.btn{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:8px;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+  font-weight:600
+}
 
 /* Conteneur principal du header */
 .header-isen {
@@ -210,41 +254,65 @@ Images + les liens vers le site isen-ouest.fr :
 
 
 <article class="card">
-<a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
-<img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Vignette - Cybersécurité ISEN Ouest"/>
-</a>
-<div class="card-content">
-<h3>Cybersécurité</h3>
-<p>Formation orientée sécurité des systèmes, réseaux et applications — préparation aux défis de la protection des données et des infrastructures.</p>
-<a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">En savoir plus</a>
-</div>
+  <a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
+    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Vignette - Cybersécurité ISEN Ouest"/>
+  </a>
+  <div class="card-content">
+    <h3>Cybersécurité</h3>
+    <p>Formation orientée sécurité des systèmes, réseaux et applications — préparation aux défis de la protection des données et des infrastructures.</p>
+    <a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">En savoir plus</a>
+  </div>
 </article>
 
 
 <article class="card">
-<a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
-<img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Vignette - Développement logiciel ISEN Ouest"/>
-</a>
-<div class="card-content">
-<h3>Développement logiciel</h3>
-<p>Parcours centré sur l'ingénierie logicielle moderne : architectures, DevOps, mobile, web et qualité logicielle.</p>
-<a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">En savoir plus</a>
-</div>
+  <a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
+    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Vignette - Développement logiciel ISEN Ouest"/>
+  </a>
+  <div class="card-content">
+    <h3>Développement logiciel</h3>
+    <p>Parcours centré sur l'ingénierie logicielle moderne : architectures, DevOps, mobile, web et qualité logicielle.</p>
+    <a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">En savoir plus</a>
+  </div>
 </article>
 
 
 <article class="card">
-<a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
-<img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Vignette - Intelligence artificielle ISEN Ouest"/>
-</a>
-<div class="card-content">
-<h3>Intelligence artificielle</h3>
-<p>Programme dédié aux méthodes d'IA, apprentissage automatique et intégration de solutions intelligentes dans l'industrie.</p>
-<a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">En savoir plus</a>
-</div>
+  <a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
+    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Vignette - Intelligence artificielle ISEN Ouest"/>
+  </a>
+  <div class="card-content">
+    <h3>Intelligence artificielle</h3>
+    <p>Programme dédié aux méthodes d'IA, apprentissage automatique et intégration de solutions intelligentes dans l'industrie.</p>
+    <a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">En savoir plus</a>
+  </div>
 </article>
 
+</section>
 
+<section class="grid" aria-label="Formations post-bac et apprentissage">
+  <article class="card">
+  <a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
+  <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Vignette - Formation post-bac ISEN Ouest"/>
+  </a>
+  <div class="card-content">
+  <h3>Formations post-bac</h3>
+  <p>Chaque étudiant construit son propre parcours de formation sur 5 ans. Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
+  <a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">Cycles post-bac</a>
+  </div>
+  </article>
+
+
+  <article class="card">
+  <a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
+  <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="Vignette - Formation apprentissage ISEN Ouest"/>
+  </a>
+  <div class="card-content">
+  <h3>Devenir ingénieur par alternance</h3>
+  <p>Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et en entreprise. Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré pendant toute la durée du contrat.</p>
+  <a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">Formation d'ingénieurs sous statut apprenti</a>
+  </div>
+  </article>
 </section>
 </main>
 
