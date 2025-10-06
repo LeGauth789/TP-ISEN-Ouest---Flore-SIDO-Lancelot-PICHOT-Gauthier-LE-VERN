@@ -1,1 +1,347 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <style>
+html {
+  font-family: Open Sans,sans-serif;
+}
 
+.container{
+  max-width:1100px;
+  margin:28px auto;
+  padding:0 20px
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px
+}
+
+.card{
+  background:var(--card);
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(11,38,69,0.08);
+  overflow:hidden;
+  transition:transform .18s ease, box-shadow .18s ease
+}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 30px rgba(11,38,69,0.12)
+}
+
+.card img{
+  display:block;
+  width:100%;
+  height:200px;
+  object-fit:cover
+}
+.card-content{
+  padding:16px
+}
+.card-content h3{
+  margin:0 0 8px;
+  font-size:1.05rem
+}
+
+.card-content p{
+  margin:0 0 12px;
+  color:var(--muted);
+  font-size:0.95rem
+}
+
+.btn{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:8px;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+  font-weight:600
+}
+
+/* Conteneur principal du header */
+.header-isen {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Organisation interne */
+.header-container {
+  max-width: 1400px; /* un peu plus large pour aérer */
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.header-logo img {
+  height: 45px; /* logo moins haut */
+  width: auto;
+}
+
+/* Navigation */
+.header-nav {
+  background: #e30613; /* Rouge ISEN */
+  flex: 1; /* occupe toute la largeur dispo */
+  margin-left: 40px; /* espace entre logo et barre rouge */
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; /* liens espacés sur toute la largeur */
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  flex: 1; /* chaque lien occupe une largeur égale */
+  text-align: center;
+}
+
+.header-nav a {
+  display: block;
+  padding: 14px 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Conteneur principal */
+.footer-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Colonne 1 : logo + bouton */
+.footer-col-logo {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  height: 100px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.btn-contact {
+  display: block;
+  padding: 10px 20px;
+  background: #c8102e;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  margin: auto;
+}
+
+.btn-contact:hover {
+  background: #a00b23;
+}
+
+/* Zone liens (colonnes 2-4) */
+.footer-links-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Titre général */
+.footer-cities {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Colonnes de liens */
+.footer-links-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+	width: 25%
+}
+.footer-col h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+/* Bas de page */
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+    </style>
+</head>
+<body>
+<header class="header-isen">
+  <div class="header-container">
+    <!-- Logo -->
+    <a href="/" class="header-logo">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
+    </a>
+
+    <!-- Navbar -->
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#">Liens à venir</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- PLUGGIN IMAGES 
+Nos formations ingénieurs
+Images + les liens vers le site isen-ouest.fr :
+	https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png
+	https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png
+	https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png  
+-->
+<main class="container">
+<section class="grid" aria-label="Formations ISEN Ouest">
+
+
+<article class="card">
+  <a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
+    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Vignette - Cybersécurité ISEN Ouest"/>
+  </a>
+  <div class="card-content">
+    <h3>Cybersécurité</h3>
+    <p>Formation orientée sécurité des systèmes, réseaux et applications — préparation aux défis de la protection des données et des infrastructures.</p>
+    <a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">En savoir plus</a>
+  </div>
+</article>
+
+
+<article class="card">
+  <a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
+    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Vignette - Développement logiciel ISEN Ouest"/>
+  </a>
+  <div class="card-content">
+    <h3>Développement logiciel</h3>
+    <p>Parcours centré sur l'ingénierie logicielle moderne : architectures, DevOps, mobile, web et qualité logicielle.</p>
+    <a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">En savoir plus</a>
+  </div>
+</article>
+
+
+<article class="card">
+  <a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
+    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Vignette - Intelligence artificielle ISEN Ouest"/>
+  </a>
+  <div class="card-content">
+    <h3>Intelligence artificielle</h3>
+    <p>Programme dédié aux méthodes d'IA, apprentissage automatique et intégration de solutions intelligentes dans l'industrie.</p>
+    <a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">En savoir plus</a>
+  </div>
+</article>
+
+</section>
+
+<section class="grid" aria-label="Formations post-bac et apprentissage">
+  <article class="card">
+  <a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
+  <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Vignette - Formation post-bac ISEN Ouest"/>
+  </a>
+  <div class="card-content">
+  <h3>Formations post-bac</h3>
+  <p>Chaque étudiant construit son propre parcours de formation sur 5 ans. Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
+  <a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">Cycles post-bac</a>
+  </div>
+  <div class="block-button">
+		<a href="ACOMPLETER">Lien</a>
+	</div>
+  </article>
+
+
+  <article class="card">
+  <a href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">
+  <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="Vignette - Formation apprentissage ISEN Ouest"/>
+  </a>
+  <div class="card-content">
+  <h3>Devenir ingénieur par alternance</h3>
+  <p>Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et en entreprise. Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré pendant toute la durée du contrat.</p>
+  <a class="btn" href="https://isen-ouest.fr" target="_blank" rel="noopener noreferrer">Formation d'ingénieurs sous statut apprenti</a>
+  </div>
+  <div class="block-button">
+		<a href="ACOMPLETER">Lien</a>
+	</div>
+  </article>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Colonne 1 : Logo + bouton -->
+    <div class="footer-col footer-col-logo">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
+           alt="ISEN Ouest" class="footer-logo">
+    </div>
+
+    <!-- Zone titres + colonnes 2-4 -->
+    <div class="footer-links-section">
+      <!-- Titre général -->
+      <p class="footer-cities">Texte à venir</p>
+
+  </div>
+
+  <!-- Bas de page -->
+</footer>
+<div class="footer-bottom">
+  &copy;
+</div>
+</body>
+</html>
